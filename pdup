@@ -10,7 +10,7 @@ do
 	RESPONSE=$(curl -# -F "fileName=$FILENAME" -F "file=@$FILE" $PDSERVER/api/upload)
 	FILEID=$(echo $RESPONSE | grep -Po '(?<="id":")[^"]*')
 
-	echo "Your file URL: $PDSERVER/u/$FILEID"
+	echo "Your file URL: $PDSERVER/api/file/$FILEID"
 	echo ""
 done
 
