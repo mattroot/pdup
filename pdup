@@ -1,6 +1,6 @@
 #!/bin/bash
 MINPARAMS=1
-PDSERVER="https://pixeldrain.com"
+PDSERVER="https://sia.pixeldrain.com"
 
 for FILE in "$@"
 do
