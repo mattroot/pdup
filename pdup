@@ -4,14 +4,14 @@ PDSERVER="https://sia.pixeldrain.com"
 
 for FILE in "$@"
 do
-	FILENAME="${FILE##*/}"
+        FILENAME="${FILE##*/}"
 
-	echo "Uploading $FILENAME ... "
-	RESPONSE=$(curl -# -F "fileName=$FILENAME" -F "file=@$FILE" $PDSERVER/api/file)
-	FILEID=$(echo $RESPONSE | grep -Po '(?<="id":")[^"]*')
+        echo "Uploading $FILENAME ... "
+        RESPONSE=$(curl -# -F "fileName=$FILENAME" -F "file=@$FILE" $PDSERVER/api/file)
+        FILEID=$(echo $RESPONSE | grep -Po '(?<="id":")[^"]*')
 
-	echo "Your file URL: $PDSERVER/api/file/$FILEID"
-	echo ""
+        echo "Your file URL: $PDSERVER/api/file/$FILEID"
+        echo ""
 done
 
 echo "" # Move cursor down when script finishes
