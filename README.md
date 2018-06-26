@@ -1,8 +1,8 @@
-Hello, I made a little Bash script that you can use to upload files to https://pixeldrain.com/ from the terminal. This is very useful for showing log files to developers or making quick backups of remote files through SSH.
+Hello, I made a little Bash script that you can use to upload files to https://sia.pixeldrain.com/ from the terminal. This is very useful for showing log files to developers or making quick backups of remote files through SSH.
 
 To install it you can execute this command:
 
-    sudo wget https://raw.githubusercontent.com/Fornax96/pdup/master/pdup -O "/usr/local/bin/pdup"; sudo chmod +x "/usr/local/bin/pdup"
+    sudo wget https://raw.githubusercontent.com/artur9010/pdup/master/pdup -O "/usr/local/bin/pdup"; sudo chmod +x "/usr/local/bin/pdup"
 
 Explanation: The wget command downloads the script from github and saves it to /usr/local/bin/pdup so you can run it from the terminal. Then chmod makes it executable
 
