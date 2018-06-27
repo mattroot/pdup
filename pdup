@@ -1,5 +1,4 @@
 #!/bin/bash
-MINPARAMS=1
 PDSERVER="https://sia.pixeldrain.com"
 
 for FILE in "$@"
